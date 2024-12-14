@@ -1,0 +1,13 @@
+{
+    "name": "com.jhs-library.scriptable-variable",
+    "version": "1.0.0",
+    "displayName": "Scriptable Variable",
+    "description": "Scriptable Object 확장 아키텍처",
+    "unity": "2019.1",
+    "dependencies": {
+    },
+    "author": {
+        "name": "Hosung Jin",
+        "email": "ghtjd0075@gmail.com"
+    }
+}

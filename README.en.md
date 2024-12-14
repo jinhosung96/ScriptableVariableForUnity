@@ -16,12 +16,30 @@ Scriptable Variable provides no-code solutions for common spaghetti code problem
 
 ## Installation
 
-1. Add the package to your Unity project:
-   - Copy the `ScriptableVariable` library to your project's Assets folder
+### Via Package Manager
 
-2. For reactive features:
-   - Install the R3 package
-   - Add the `R3_SUPPORT` scripting define symbol to your project
+For Unity 2019.3.4f1 or higher, you can install the package directly through the Package Manager using a Git URL.
+
+1. Open Package Manager (Window > Package Manager)
+2. Click '+' button and select "Add package from git URL"
+3. Enter the following URL:
+```
+https://github.com/jinhosung96/ScriptableVariableForUnity.git
+```
+
+Alternatively, you can add it directly to your `Packages/manifest.json`:
+```json
+{
+  "dependencies": {
+    "com.jhs-library.auto-path-generator": "https://github.com/jinhosung96/ScriptableVariableForUnity.git"
+  }
+}
+```
+
+To install a specific version, add the #{version} tag to the URL:
+```
+https://github.com/jinhosung96/ScriptableVariableForUnity.git#1.0.0
+```
 
 ## Core Components
 

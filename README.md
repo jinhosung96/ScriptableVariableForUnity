@@ -16,12 +16,30 @@ Scriptable Variable은 다음과 같은 공통 스파게티 코드 문제에 대
 
 ## 설치 방법
 
-1. 다음과 같은 방법으로 패키지를 유니티 프로젝트에 추가하세요:
-   - `ScriptableVariable` 라이브러리를 프로젝트의 Assets 폴더에 복사
+### Package Manager를 통한 설치
 
-2. 리액티브 기능을 사용하려면 다음 사항을 확인하세요:
-   - R3 패키지 설치
-   - 프로젝트에 `R3_SUPPORT` 스크립팅 정의 심볼 추가
+Unity 2019.3.4f1 이상 버전에서는 Package Manager에서 직접 Git URL을 통해 설치할 수 있습니다.
+
+1. Package Manager 창을 엽니다 (Window > Package Manager)
+2. '+' 버튼을 클릭하고 "Add package from git URL"을 선택합니다
+3. 다음 URL을 입력합니다:
+```
+https://github.com/jinhosung96/ScriptableVariableForUnity.git
+```
+
+또는 `Packages/manifest.json` 파일에 직접 추가할 수 있습니다:
+```json
+{
+  "dependencies": {
+    "com.jhs-library.auto-path-generator": "https://github.com/jinhosung96/ScriptableVariableForUnity.git"
+  }
+}
+```
+
+특정 버전을 설치하려면 URL 뒤에 #{version} 태그를 추가하면 됩니다:
+```
+https://github.com/jinhosung96/ScriptableVariableForUnity.git#1.0.0
+```
 
 ## 핵심 컴포넌트
 
